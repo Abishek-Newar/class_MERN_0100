@@ -16,3 +16,15 @@ console.log(str4.replace("a","@"))
 console.log(str4.replaceAll("a","@"))
 var a = str4.split("a")
 console.log(a)
+
+//Array
+var arr = [32,43,54,65,76]
+console.log(arr[2])
+
+// var ar = new Array(4)
+// console.log(ar)
+
+//array methods
+
+console.log(arr.length)
+console.log(arr.toString())
