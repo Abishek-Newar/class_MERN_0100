@@ -1,5 +1,6 @@
 import FunctionalComponent from "./components/FunctionalComponents"
 import ClassBasedComponent from "./components/ClassBasedComponent"
+import UseEffect from "./components/UseEffect"
 function App() {
 
   
@@ -8,6 +9,7 @@ function App() {
       hello
       <FunctionalComponent />
       <ClassBasedComponent />
+      <UseEffect />
     </>
   )
 }
