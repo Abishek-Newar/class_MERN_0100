@@ -1,14 +1,11 @@
-import React, { memo, useContext } from 'react'
+import React, { useContext } from 'react'
 import { context } from '../App'
 
 const Callback = () => {
-    const {name} = useContext(context)
-    console.log("hello")
+  const {count} = useContext(context)
   return (
-    <div>Callback {name}</div>
+    <div>{count}</div>
   )
 }
 
-export default memo(Callback)
-
-//contextAPI 
+export default Callback

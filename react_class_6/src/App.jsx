@@ -1,18 +1,16 @@
 import { createContext, useCallback, useState } from "react"
 import Callback from "./Component/Callback"
+import Button from "./Component/Button"
 
 export const context = createContext(null)
-function App() {
-  const [name,setName] = useState(0)
 
-  const handle = useCallback(()=>{
-    console.log("hii")
-  },[])
+function App() {
+  const [count,setCount] = useState(0)
   return (
     <>
-      <context.Provider value={{name}}>
-      <Callback data={handle} />
-      <button onClick={()=>{setName(name+1)}}>{name}</button>
+      <context.Provider value={{count,setCount}}>
+      <Callback />
+      <Button />
       </context.Provider>
     </>
   )
